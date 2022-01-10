@@ -724,6 +724,7 @@ a.bottom-popup-form__email {
 .wrapper_dark-header .header {
   color: #000;
   position: relative;
+  padding: 10px 0 10px;
 }
 .header::before {
   content: "";
@@ -757,6 +758,7 @@ a.bottom-popup-form__email {
 @media (max-width: 29.99875em) {
   .header__body {
     justify-content: center;
+    column-gap: 1.875rem;
   }
 }
 .header__logo {
@@ -905,12 +907,15 @@ a.bottom-popup-form__email {
 }
 
 .main-header {
-  padding: 15px 0 0;
+  padding: 15px 0 0px;
 }
 @media (min-width: 29.99875em) {
   .main-header {
     flex: 1 1 auto;
   }
+}
+.wrapper_dark-header .main-header {
+  padding: 10px 0 0px;
 }
 .main-header__top {
   display: flex;
