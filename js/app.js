@@ -12933,8 +12933,7 @@
                   Object.entries(window.YT.PlayerState);
                 },
               },
-            }),
-              console.log("Yay, YT exists!", YT);
+            });
           }
           const s = window.onYouTubeIframeAPIReady;
           s && s(), n();
