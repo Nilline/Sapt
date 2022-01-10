@@ -1249,6 +1249,7 @@ a.bottom-popup-form__email {
 .scroll-body-header__list {
   flex: 1 1 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   column-gap: 0.5rem;
