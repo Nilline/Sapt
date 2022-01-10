@@ -12930,8 +12930,7 @@
                   i = e.target;
                 },
                 onStateChange: function (e) {
-                  var t = Object.entries(window.YT.PlayerState);
-                  console.log(t.find((t) => t[1] === e.data)[0]);
+                  Object.entries(window.YT.PlayerState);
                 },
               },
             }),
