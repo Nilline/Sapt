@@ -4689,6 +4689,10 @@ a.top-block__link {
   }
 }
 
+.contacts-bottom-block {
+  padding: 1.25rem 0 3.5625rem;
+}
+
 .industry-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
