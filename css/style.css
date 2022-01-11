@@ -2078,7 +2078,7 @@ a.links-footer-underline {
 }
 @media (max-width: 29.99875em) {
   .top-block {
-    padding: 2.25rem 0 5.3125rem;
+    padding: 1.875rem 0 1.875rem;
   }
 }
 .top-block__container {
@@ -2134,12 +2134,21 @@ a.links-footer-underline {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 1.25rem;
+}
+@media (min-width: 59.99875em) {
+  .top-block__content {
+    padding-top: 1.25rem;
+  }
 }
 .top-block__crumb {
   font-size: 0.875rem;
   line-height: 1.55;
   margin-bottom: 3.4375rem;
+}
+@media (max-width: 39.99875em) {
+  .top-block__crumb {
+    margin-bottom: 2.5rem;
+  }
 }
 .top-block__title {
   font-family: "EuropeExt", Arial, sans-serif;
@@ -2151,19 +2160,35 @@ a.links-footer-underline {
 .top-block__title:not(:last-child) {
   margin-bottom: 1.875rem;
 }
+@media (min-width: 29.99875em) {
+  .page__plastics .top-block__title br {
+    display: none;
+  }
+}
 @media (max-width: 39.99875em) {
   .top-block__title {
     line-height: 1.35;
+  }
+}
+@media (max-width: 31.25em) {
+  .page__plastics .top-block__title {
+    font-size: 1.5625rem;
   }
 }
 @media (max-width: 29.99875em) {
   .top-block__title {
     font-size: 1.875rem;
   }
+  .top-block__title:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
   .industry .top-block__title {
     font-size: 1.6875rem;
   }
   .labour .top-block__title {
+    font-size: 1.5625rem;
+  }
+  .page__plastics .top-block__title {
     font-size: 1.5625rem;
   }
 }
@@ -4354,9 +4379,61 @@ a.top-block__link {
   align-self: flex-start;
 }
 
+.body-block-general__container_big {
+  padding: 0 !important;
+  max-width: 87.5rem;
+}
+@media (max-width: 75em) {
+  .body-block-general__container_big {
+    max-width: 64.0625rem;
+  }
+}
+@media (max-width: 59.99875em) {
+  .body-block-general__container_big {
+    max-width: 43.75rem;
+  }
+}
+@media (max-width: 39.99875em) {
+  .body-block-general__container_big {
+    max-width: 33.75rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .body-block-general__container_big {
+    max-width: 21.25rem;
+  }
+}
+.body-block-general__container_margin-top {
+  margin-top: -1.25rem;
+}
+.body-block-general__fixed-block {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/industry/moldingplastics/bg-fixed.webp") center/cover fixed no-repeat;
+}
+@media (max-width: 75em) {
+  .body-block-general__fixed-block {
+    height: 440px;
+  }
+}
+@media (max-width: 59.99875em) {
+  .body-block-general__fixed-block {
+    background: url("../img/industry/moldingplastics/bg-fixed.webp") center/cover no-repeat;
+  }
+}
+@media (max-width: 39.99875em) {
+  .body-block-general__fixed-block {
+    height: 370px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .body-block-general__fixed-block {
+    height: 250px;
+  }
+}
 .general-content-block {
   background-color: #fff;
-  padding: 4.375rem 0 2.8125rem;
+  padding: 3.125rem 0 2.8125rem;
   margin-top: 1.25rem;
 }
 .page__labour .general-content-block {
@@ -4364,11 +4441,33 @@ a.top-block__link {
 }
 @media (max-width: 29.99875em) {
   .general-content-block {
-    padding: 1.875rem 0 2.5rem;
+    padding: 1.5625rem 0;
   }
 }
 .general-content-block__container {
   position: relative;
+}
+.general-content-block__title-block {
+  margin-bottom: 1.875rem;
+}
+.general-content-block__title-block .block-title__title {
+  font-size: 1.5rem;
+}
+.general-content-block__title-block .block-title__subtitle:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+@media (max-width: 39.99875em) {
+  .general-content-block__title-block {
+    margin-bottom: 1.875rem;
+  }
+  .general-content-block__title-block .block-title__title {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .general-content-block__title-block {
+    margin-bottom: 1.5625rem;
+  }
 }
 .general-content-block__row:not(:last-child) {
   margin-bottom: 4.375rem;
@@ -4395,6 +4494,38 @@ a.top-block__link {
   }
   .labour__occupational-safety .general-content-block__row_grid {
     max-width: 39.375rem;
+  }
+  .industry__plastics .general-content-block__row_grid {
+    grid-template-columns: 1fr 321px;
+  }
+}
+@media (max-width: 59.99875em) {
+  .industry__plastics .general-content-block__row_grid {
+    grid-template-columns: 1fr;
+  }
+}
+.general-content-block__item_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.general-content-block__item_grid:not(.general-content-block__item_no-gap) {
+  gap: 1.25rem;
+}
+@media (max-width: 59.99875em) {
+  .industry__plastics .general-content-block__item_nth:nth-child(1) {
+    order: 2;
+  }
+  .industry__plastics .general-content-block__item_nth:nth-child(2) {
+    order: 1;
+  }
+}
+@media (max-width: 39.99875em) {
+  .general-content-block__item_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .general-content-block__item_grid:not(.general-content-block__item_no-gap) {
+    gap: 1.25rem;
   }
 }
 .general-content-block__title {
@@ -4435,6 +4566,9 @@ a.top-block__link {
 }
 .general-content-block__picture-ibg {
   padding-bottom: 112.2905027933%;
+}
+.industry__plastics .general-content-block__picture-ibg {
+  padding-bottom: 68.156424581%;
 }
 @media (max-width: 75em) {
   .general-content-block__picture-ibg {
@@ -4491,6 +4625,105 @@ a.top-block__link {
   .general-content-block__certificate {
     max-width: 25.9375rem;
     margin-left: -0.9375rem;
+  }
+}
+
+.body-specifications {
+  padding-top: 4.375rem;
+  padding-bottom: 1.875rem;
+}
+@media (max-width: 59.99875em) {
+  .body-specifications {
+    padding-top: 3.75rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .body-specifications {
+    padding-top: 3.125rem;
+  }
+}
+.body-specifications__title-block {
+  margin-bottom: 0.9375rem;
+}
+.table-specifications {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.875rem 0 0;
+  overflow-x: auto;
+}
+.table-specifications__list {
+  min-width: 62.5rem;
+  display: grid;
+  border-left: 1px solid #7d7d7d;
+  font-size: 0.875rem;
+  color: #333333;
+  line-height: 1.5714285714;
+}
+.table-specifications__list:nth-child(2n+2) {
+  background-color: #fff;
+}
+.table-specifications__list:nth-child(2n+3) {
+  background-color: #eeeeee;
+}
+.table-specifications__list:first-child {
+  background-color: #d4102f;
+  color: #fff;
+  border-top: 1px solid #7d7d7d;
+  font-weight: 600;
+  line-height: 1.5555555556;
+}
+.industry__plastics .table-specifications__list {
+  grid-template-columns: 1fr 15.811965812% 6.0683760684% 8.9743589744% 9.8290598291% 10% 10.2564102564% 10.2564102564% 11.1965811966%;
+}
+.industry__plastics .table-specifications__list:first-child {
+  font-size: 1rem;
+}
+.table-specifications__row-item {
+  border-right: 1px solid #7d7d7d;
+  border-bottom: 1px solid #7d7d7d;
+  padding: 1.25rem;
+}
+@media (max-width: 59.99875em) {
+  .table-specifications__row-item {
+    padding: 1.25rem 0.625rem;
+  }
+}
+
+.industry-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding: 0.625rem 0 1.25rem;
+}
+.industry-gallery__picture-ibg {
+  cursor: zoom-in;
+  padding-bottom: 56.6371681416%;
+}
+.industry-gallery__picture-ibg_span {
+  grid-row: span 2;
+}
+@media (max-width: 75em) {
+  .industry-gallery {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 59.99875em) {
+  .industry-gallery {
+    grid-template-columns: 1fr;
+  }
+  .industry-gallery__picture-ibg_span {
+    grid-row: span 1;
+  }
+  .industry-gallery__picture-ibg:nth-child(1) {
+    padding-bottom: 113.2743362832%;
+  }
+}
+@media (max-width: 59.99875em) and (max-width: 29.99875em) {
+  .industry-gallery__picture-ibg {
+    padding-bottom: 110.3448275862%;
+  }
+  .industry-gallery__picture-ibg:nth-child(1) {
+    padding-bottom: 187.5862068966%;
   }
 }
 .swiper {
